@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+    <title>FeaturedSpace || MC</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+        <ul class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="discord.html">Discord</a></li>
+        </ul>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="staff.html">Staff</a>
+        <a href="store.html">Store</a>
+        <a href="appeal.html">Appeal</a>
+        <a href="forums.html">Forums</a>
+        <a href="servers.html">Servers</a>
+    </div>
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '0px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0px';
+            document.getElementById('main').style.marginLeft = '0px';
+        }
+    </script>
+
+    <header id="showcase" class="grid">
+        <div class="bg-image"></div>
+        <div class="content-wrap">
+            <h1>FeaturedSpace Network</h1>
+            <p>A Custom Coded and Unique Minecraft Network...</p>
+            <a href="about.html" class="btn">Read More</a>
+        </div>
+    </header>
+
+    <!-- Section a-->
+
+    <main id="main">
+        <section id="section-a" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">Our Network</h2>
+                <div class="content-text">
+                    <p>We offer a fully custom coded, fun and unique mincraft server experience for everyone...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section b-->
+
+        <section id="section-b" class="grid">
+            <ul>
+                <li>
+                    <div class="card">
+                        <img src="lobby.png" alt="">
+                        <div class="card-content">
+                            <h3>Lobby:</h3>
+                            <p>Our amazing custom built lobby</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="survival.jpg" alt="">
+                        <div class="card-content">
+                            <h3>Survival:</h3>
+                            <p>A new RPG style survival server! Can you defeat all of the bosses?</p>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="oneshot.jpg" alt="">
+                        <div class="card-content">
+                            <h3>OneShot:</h3>
+                            <p>An all new PvP experience! The goal of this server is to eliminate your enemies with a twist... You have one bow and a single arrow... hink you have what it takes? Join today to find out!</p>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="main-footer" class="grid">
+        <div>FeaturedSpace Networks</div>
+        <div>Made with love - 2019/2020</div>
+    </footer>
+
+</body>
+
+</html>

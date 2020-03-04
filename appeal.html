@@ -1,0 +1,20 @@
+{% extends 'index.html'} {% block content %} {% end block %}
+
+<h2>Appeal</h2>
+<form action="" method="POST">
+    <p>
+        {{form.username.label}} <br> {{form.username(size=30)}}
+    </p>
+    <p>
+        {{form.DoB.label}} <br> {{form.DoB(size=30)}}
+    </p>
+    <p>
+        {{form.RoB.label}} <br> {{form.RoB(size=30)}}
+    </p>
+    <p>
+        {{form.unban_reason.label}} <br> {{form.unban_reason(size=30)}}
+    </p>
+    <p>
+        {{form.submit()}}
+    </p>
+</form>
